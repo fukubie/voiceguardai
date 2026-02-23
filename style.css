@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #1c1c1e;
+    text-align: center;
+  }
+  
+  #status {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  
+  #transcript {
+    background: #2c2c2e;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 80px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    font-size: 16px;
+  }
