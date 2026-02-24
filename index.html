@@ -1,21 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>VoiceShield AI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>VoiceGuard AI — Know who's really speaking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app">
-  <h1>🛡️ VoiceShield AI</h1>
+  <div class="noise"></div>
+  <div class="gradient-orb gradient-orb-1"></div>
+  <div class="gradient-orb gradient-orb-2"></div>
 
-  <div id="status">Press Start</div>
+  <div class="app glass">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🛡️</span>
+        <h1>VoiceGuard AI</h1>
+      </div>
+      <p class="tagline">Know who's really speaking.</p>
+    </header>
 
-  <div id="transcript">Listening...</div>
+    <div class="status-card glass">
+      <div id="status" class="status-text">Press Start to analyze</div>
+      <div id="confidence" class="confidence-text"></div>
+      <div class="score-bar-container">
+        <div id="scoreBar" class="score-bar" style="width: 0%"></div>
+      </div>
+      <div class="score-labels">
+        <span>Human</span>
+        <span>AI / Synthetic</span>
+      </div>
+    </div>
 
-  <button onclick="startListening()">🎤 Start Call</button>
-</div>
+    <div class="waveform-section glass">
+      <canvas id="waveform" class="waveform-canvas"></canvas>
+      <p class="waveform-label">Sound wave &amp; consistency</p>
+    </div>
 
-<script src="script.js"></script>
+    <div class="transcript-card glass">
+      <h3>Live transcript</h3>
+      <div id="transcript" class="transcript">Say something or start a call to see transcript here.</div>
+    </div>
+
+    <div class="actions">
+      <button id="listenBtn" class="btn-primary glass" onclick="toggleListening()">
+        <span class="btn-icon">🎤</span>
+        <span class="btn-label">Start analysis</span>
+      </button>
+    </div>
+
+    <footer class="footer">
+      <small>Detects AI-generated voices &amp; synthetic speech patterns</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
