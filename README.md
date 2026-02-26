@@ -87,6 +87,16 @@ The app uses this idea to push the score toward “AI / synthetic” when the so
 
 ---
 
+## Apple Integration
+
+VoiceGuard AI is built to work seamlessly for **Apple users** on iPhone, iPad, and Mac:
+
+- **Safari & Web App experience** — The app runs in Safari with full microphone support and is configured as an installable web app (Add to Home Screen on iOS). You get a native-like experience without downloading from the App Store.
+- **System-native look** — The UI uses Apple’s system font (`-apple-system`) so it feels at home on macOS and iOS.
+- **Privacy and convenience** — Analysis runs in the browser; no voice data is sent to our servers. Apple users can check calls or recordings quickly from any device with Safari, with the same privacy expectations they’re used to in the Apple ecosystem.
+
+---
+
 ## Solution Summary
 
 VoiceGuard AI aims to **restore trust in digital communication** by giving users a simple, fast check on whether the voice they hear might be synthetic. It combines:
