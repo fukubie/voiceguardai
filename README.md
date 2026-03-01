@@ -6,6 +6,12 @@ VoiceGuard AI is an AI-powered voice detection app that analyzes live speech or 
 
 ---
 
+## Live Demo
+
+https://fukubie.github.io/voiceguardai/
+
+---
+
 ## The Problem
 
 With the rise of AI-generated voices and deepfake technology, it is increasingly hard to tell real human speech from synthetic audio. Tools from companies like OpenAI and ElevenLabs can clone voices with high realism from short samples, leading to:
